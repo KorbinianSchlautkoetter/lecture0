@@ -1,0 +1,59 @@
+p {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+h2, h3, h4 {
+  color: green;
+}
+
+ol li {
+  color: red;
+}
+/*Above applies the format to all list items in an ordered list (child nodes and further descendants)*/
+
+ol > li {
+  color: green;
+}
+/*Above applies the format to all list items in an ordered list (only child nodes, not non-immediate children)*/
+
+input[type=text] {
+  background-color: red;
+}
+
+input[type=number] {
+  background-color: blue;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 22px
+}
+
+button:hover {
+  background-color: green;
+}
+/*Changes format when mouse if over button*/
+
+a::before {
+  content: "\21d2 Click here: ";
+  font-weight: bold;
+}
+/*Before the content of the part add the content "..." which you format bold.*/
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+/*Apply the format when you highlight content on the webpage*/
+
+@media print {
+  .screen-only {
+    display: none;
+  }
+}
+/*those classes won't be shown when the page is printed*/
